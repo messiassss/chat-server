@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-var server = app.listen(3000,()=>{
+var server = app.listen(process.env.PORT || 3000,()=>{
     console.log('Server is running on port number 3000')
 })
 
